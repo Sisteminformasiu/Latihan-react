@@ -5,8 +5,8 @@ import Login from "./pages/Login";
 import Detail from "./pages/Detail";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin/Dashboard";
-import MasterData from "./pages/Admin/MasterData";
 import Transaction from "./pages/Admin/Transaction";
+import Kategori from "./pages/Admin/MasterData/Kategori";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route element={<Detail />} path="/detail/:title" />
           <Route element={<Home />} path="/home" />
           <Route element={<Admin />} path="/admin/dashboard" />
-          <Route element={<MasterData />} path="/admin/master-data" />
+          <Route element={<Kategori />} path="/admin/kategori" />
           <Route element={<Transaction />} path="/admin/transaksi" />
         </Routes>
       </BrowserRouter>
